@@ -1,10 +1,10 @@
 import { useState } from "react";
 import GetAjoke from "./GetAjoke";
-import MemesPage from "./memesPage";
+// import MemesPage from "./memesPage";
 
 export default function StressHelpPage() {
   const [clicked, setClicked] = useState(false);
-  const [memesClicked, setMemesClicked] = useState(false);
+  // const [memesClicked, setMemesClicked] = useState(false);
 
   return (
     <>
@@ -16,9 +16,9 @@ export default function StressHelpPage() {
         </a>
       </button>
       <button> Back to the home page </button>
-      <button onClick={() => setMemesClicked(true)}> Memes </button>
+      {/* <button onClick={() => setMemesClicked(true)}> Memes </button> */}
       {clicked && <GetAjoke />}
-      {memesClicked && <MemesPage />}
+      {/* {memesClicked && <MemesPage />} */}
     </>
   );
 }

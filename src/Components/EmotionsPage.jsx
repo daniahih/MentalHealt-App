@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import StressHelpPage from "./StressHelp";
+import StressHelpPage from "./StressHelpPage";
 
 function EmotionsPage() {
   const [redirectTo, setRedirectTo] = useState(false);
@@ -9,7 +9,7 @@ function EmotionsPage() {
   };
 
   if (redirectTo) {
-    return <> hwllle</>;
+    return <StressHelpPage />;
   }
 
   return (
