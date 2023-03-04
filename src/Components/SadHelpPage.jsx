@@ -26,8 +26,8 @@ export default function SadHelpPage() {
         </a>
       </button>
 
-      <button onClick={backtoHomePage}> Back to the home page </button>
       <button onClick={() => setMemesClicked(true)}> Memes </button>
+      <button onClick={backtoHomePage}> Back to the home page </button>
       {clicked && <GetAjoke />}
       {memesClicked && <MemesPage />}
     </>

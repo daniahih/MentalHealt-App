@@ -31,7 +31,7 @@ const Router = createBrowserRouter([
       },
     ],
   },
-  { path: "/RegisterPage", element: <RegisterPage />, children: [] },
+  { path: "/RegisterPage", element: <RegisterPage /> },
 ]);
 
 function App() {

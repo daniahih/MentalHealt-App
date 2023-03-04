@@ -1,9 +1,9 @@
 #main {
-  background-image: url("https://i.pinimg.com/564x/57/d2/3f/57d23f6586317793bfe01f7b8f8e6b47.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/flat-world-mental-health-day-illustration_23-2149632633.jpg?w=740");
   width: 87.4vw;
-  height: 90vh;
+  height: 70vh;
   background-repeat: no-repeat;
-  background-position: top 10% left 0%;
-  background-size: cover;
+  background-position: top 10% left 50%;
+  background-size: contain;
   padding: 80px 80px;
 }

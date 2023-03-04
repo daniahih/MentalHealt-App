@@ -21,7 +21,7 @@ export default function LoginPage() {
       setIsLoggedIn(true);
       setLoggedUser(StoredName);
       console.log("Logged in successfully");
-      <Link to="/loginPage"></Link>;
+      <Link to="/emotionpage"></Link>;
     } else {
       // If they don't match, show an error message
       console.error("Invalid email or password");
