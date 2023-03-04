@@ -4,6 +4,8 @@ import HomePage from "./Components/Home";
 import AboutUs from "./Components/AboutUs";
 import GetStarted from "./Components/GetStarted";
 import RegisterPage from "./Components/RegisterPage";
+import LoginPage from "./Components/LoginPage";
+import EmotionsPage from "./Components/EmotionsPage";
 
 const Router = createBrowserRouter([
   {
@@ -19,10 +21,19 @@ const Router = createBrowserRouter([
         path: "/GetStarted",
         element: <GetStarted />,
       },
+      {
+        path: "/loginPage",
+        element: <LoginPage />,
+      },
+      {
+        path: "/emotionpage",
+        element: <EmotionsPage />,
+      },
     ],
   },
-  { path: "/RegisterPage", element: <RegisterPage /> },
+  { path: "/RegisterPage", element: <RegisterPage />, children: [] },
 ]);
+
 function App() {
   return (
     <div>

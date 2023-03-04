@@ -1,30 +1,36 @@
 import React, { useState } from "react";
-import { LoginPage } from "./LoginPage";
+import { Link } from "react-router-dom";
+import LoginPage from "./LoginPage";
 
 function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const [register, setisRegister] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(
+    localStorage.getItem("isRegistered") === "true"
+  );
 
   const handleRegister = () => {
     // save user email and password to local storage
     localStorage.setItem("userEmail", email);
     localStorage.setItem("userPassword", password);
-    localStorage.setItem("useName", name);
+    localStorage.setItem("userName", name);
+
+    // set isRegistered flag to true
+    localStorage.setItem("isRegistered", "true");
 
     // clear email and password fields
     setEmail("");
     setPassword("");
-    setisRegister(true);
+    setIsRegistered(true);
 
     alert("Thank you for registering!");
-    // show thank you message and redirect to login pag
   };
-  if (register) {
+
+  if (isRegistered) {
     return (
       <>
-        <LoginPage />
+        <Link to="/loginPage">Log in here.</Link>
       </>
     );
   } else {
@@ -60,6 +66,9 @@ function RegisterPage() {
             Register
           </button>
         </form>
+        <p>
+          Already have an account? <Link to="/loginPage">Log in here.</Link>
+        </p>
       </div>
     );
   }

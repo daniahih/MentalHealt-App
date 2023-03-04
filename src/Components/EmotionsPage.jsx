@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import SadHelpPage from "./SadHelpPage";
+import StressHelpPage from "./StressHelpPage";
 
 function EmotionsPage() {
   const [redirectTo, setRedirectTo] = useState(false);
+  const [redirectToStress, setRedirectToStress] = useState(false);
 
   const handleImageClick = () => {
     setRedirectTo(true);
@@ -10,6 +12,14 @@ function EmotionsPage() {
 
   if (redirectTo) {
     return <SadHelpPage />;
+  }
+
+  const handelStressImage = () => {
+    setRedirectToStress(true);
+  };
+
+  if (redirectToStress) {
+    return <StressHelpPage />;
   }
 
   return (
@@ -24,9 +34,9 @@ function EmotionsPage() {
             height="200px"
           />
         </div>
-        <div>
+        <div onClick={handelStressImage}>
           <img
-            src="https://media.istockphoto.com/id/496261720/vector/smiling-emoticon-with-smiling-eyes.jpg?s=612x612&w=0&k=20&c=bp-70mH9FIM4fBaEY7ke7FG4Gs0bJEowIpgk2as8Nc4="
+            src="https://as2.ftcdn.net/v2/jpg/03/66/81/25/1000_F_366812548_8TunZG247i3UYiRj34fMk0xU181xUioS.jpg"
             alt="Sad"
             width="200px"
             height="200px"

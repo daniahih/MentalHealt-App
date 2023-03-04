@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EmotionsPage from "./EmotionsPage";
-export function LoginPage() {
+import { Link } from "react-router-dom";
+export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,7 +13,7 @@ export function LoginPage() {
     // Retrieve stored email and password from local storage
     const storedEmail = localStorage.getItem("userEmail");
     const storedPassword = localStorage.getItem("userPassword");
-    const StoredName = localStorage.getItem("useName");
+    const StoredName = localStorage.getItem("userName");
 
     // Compare entered email and password with stored values
     if (email === storedEmail && password === storedPassword) {
@@ -20,6 +21,7 @@ export function LoginPage() {
       setIsLoggedIn(true);
       setLoggedUser(StoredName);
       console.log("Logged in successfully");
+      <Link to="/loginPage"></Link>;
     } else {
       // If they don't match, show an error message
       console.error("Invalid email or password");
