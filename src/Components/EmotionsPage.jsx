@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import StressHelpPage from "./StressHelpPage";
+import SadHelpPage from "./SadHelpPage";
 
 function EmotionsPage() {
   const [redirectTo, setRedirectTo] = useState(false);
@@ -9,7 +9,7 @@ function EmotionsPage() {
   };
 
   if (redirectTo) {
-    return <StressHelpPage />;
+    return <SadHelpPage />;
   }
 
   return (
@@ -18,8 +18,8 @@ function EmotionsPage() {
       <div className="emoji">
         <div onClick={handleImageClick}>
           <img
-            src="https://img.freepik.com/free-vector/student-stress-concept-illustration_114360-8908.jpg?w=2000"
-            alt="Happy"
+            src="https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Sad-Face-Emoji.png"
+            alt="sad"
             width="200px"
             height="200px"
           />

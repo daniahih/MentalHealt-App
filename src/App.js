@@ -19,9 +19,9 @@ const Router = createBrowserRouter([
         path: "/GetStarted",
         element: <GetStarted />,
       },
-      { path: "/RegisterPage", element: <RegisterPage /> },
     ],
   },
+  { path: "/RegisterPage", element: <RegisterPage /> },
 ]);
 function App() {
   return (
