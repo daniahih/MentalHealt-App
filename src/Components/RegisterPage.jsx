@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import LoginPage from "./LoginPage";
+import { Link, useNavigate } from "react-router-dom";
 
 function RegisterPage() {
+  let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -28,11 +28,7 @@ function RegisterPage() {
   };
 
   if (isRegistered) {
-    return (
-      <>
-        <Link to="/loginPage">Log in here.</Link>
-      </>
-    );
+    navigate("/LoginPage");
   } else {
     return (
       <div>

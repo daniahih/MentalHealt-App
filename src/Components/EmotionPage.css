@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.emotion-Countainer img {
+  border: 1px solid black;
+  width: 50%;
+}
+.emotion-Countainer div {
+  border: 1px solid black;
+  width: 50%;
+}

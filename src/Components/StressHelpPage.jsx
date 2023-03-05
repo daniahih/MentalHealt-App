@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 export default function StressHelpPage() {
   const [randomYogaVideo, setRandomYogaVideo] = useState("");
   const [randomBook, setRandomBook] = useState("");
+  const [randomTherapist, setrandomTherapist] = useState("");
+  const [randomRecipes, setrandomRecipes] = useState("");
 
   // array of yoga video links
   const yogaVideos = [
@@ -24,6 +26,11 @@ export default function StressHelpPage() {
     "Meditation for Fidgety Skeptics",
   ];
 
+  const Therapist = [
+    "Gilad Dayan",
+    " Mrs Deborah Shlider MSW",
+    "Laura Joseph Integrative",
+  ];
   // function to select a random yoga video
   const selectRandomYogaVideo = () => {
     const randomIndex = Math.floor(Math.random() * yogaVideos.length);
@@ -48,6 +55,14 @@ export default function StressHelpPage() {
     console.log("Image clicked");
     return <></>;
   };
+  const selectRandomTherapist = () => {
+    const randomIndex = Math.floor(Math.random() * Therapist.length);
+    setrandomTherapist(Therapist[randomIndex]);
+  };
+
+  useEffect(() => {
+    selectRandomTherapist();
+  }, []);
 
   return (
     <>
@@ -69,9 +84,11 @@ export default function StressHelpPage() {
           src="https://img.freepik.com/free-vector/book-lover-concept-illustration_114360-1067.jpg?w=740&t=st=1677949710~exp=1677950310~hmac=374d21c58889c7e01a271ba34638a8d42adb537a83968639d779a2f3b7eb1077"
           alt="bookimg"
         ></img>
-        <li>therapist they can contact with them</li>
+        <li>therapist they can contact with them:{randomTherapist}</li>
 
-        <li>Calm Music</li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=krcseLp4Az0">Calm Music</a>
+        </li>
         <img
           onClick={ImgClick}
           src="https://www.shutterstock.com/image-vector/woman-doing-yoga-listening-music-260nw-1726817410.jpg"
@@ -87,7 +104,7 @@ export default function StressHelpPage() {
             <li>practicing a hobby</li>
           </ul>
         </li>
-        <li>cooking (and need to fetch data from api)</li>
+        <li>cooking (and need to fetch data from api)o</li>
       </ul>
     </>
   );

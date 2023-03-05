@@ -6,6 +6,10 @@ import GetStarted from "./Components/GetStarted";
 import RegisterPage from "./Components/RegisterPage";
 import LoginPage from "./Components/LoginPage";
 import EmotionsPage from "./Components/EmotionsPage";
+import SadHelpPage from "./Components/SadHelpPage";
+import StressHelpPage from "./Components/StressHelpPage";
+import ShyHelpPage from "./Components/ShyHelpPage";
+import HappyHelpPage from "./Components/HappyHelpPage";
 
 const Router = createBrowserRouter([
   {
@@ -22,16 +26,18 @@ const Router = createBrowserRouter([
         element: <GetStarted />,
       },
       {
-        path: "/loginPage",
-        element: <LoginPage />,
-      },
-      {
         path: "/emotionpage",
         element: <EmotionsPage />,
       },
     ],
   },
+
   { path: "/RegisterPage", element: <RegisterPage /> },
+  { path: "LoginPage", element: <LoginPage /> },
+  { path: "/SadHelpPage", element: <SadHelpPage /> },
+  { path: "/StressHelpPage", element: <StressHelpPage /> },
+  { path: "/ShyHelpPage", element: <ShyHelpPage /> },
+  { path: "/HappyHelpPage", element: <HappyHelpPage /> },
 ]);
 
 function App() {

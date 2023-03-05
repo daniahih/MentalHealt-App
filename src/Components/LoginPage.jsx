@@ -1,7 +1,8 @@
 import { useState } from "react";
 import EmotionsPage from "./EmotionsPage";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function LoginPage() {
+  let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,13 +30,7 @@ export default function LoginPage() {
   }
   if (isLoggedIn) {
     // true
-
-    return (
-      <div>
-        <p style={{ fontSize: "20px" }}>Welcome {LoggedUser}</p>
-        <EmotionsPage />
-      </div>
-    );
+    navigate("/emotionpage");
   }
   return (
     <>
