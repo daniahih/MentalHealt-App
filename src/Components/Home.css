@@ -42,9 +42,8 @@
   color: rgb(255, 242, 226);
   text-align: center;
 }
-.hero-title {
-}
-.get-started-btn {
+
+.home-get-started-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgb(255, 242, 226);
@@ -59,7 +58,7 @@
   margin-left: 25vw;
 }
 
-.get-started-btn:hover {
+.home-get-started-btn:hover {
   background-color: rgb(228, 94, 5);
   box-shadow: 0 2px 0 rgb(228, 94, 5);
   transform: translateY(3px);

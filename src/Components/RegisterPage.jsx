@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "./RegisterPage.css";
 
 function RegisterPage() {
   let navigate = useNavigate();
@@ -32,7 +33,7 @@ function RegisterPage() {
   } else {
     return (
       <div>
-        <h2>Register</h2>
+        <h2>Register Page</h2>
         <form>
           <label>Name</label>
           <input
@@ -61,10 +62,10 @@ function RegisterPage() {
           <button type="button" onClick={handleRegister}>
             Register
           </button>
+          <p>
+            Already have an account? <Link to="/loginPage">Log in here.</Link>
+          </p>
         </form>
-        <p>
-          Already have an account? <Link to="/loginPage">Log in here.</Link>
-        </p>
       </div>
     );
   }

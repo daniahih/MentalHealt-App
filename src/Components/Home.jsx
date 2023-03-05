@@ -15,7 +15,7 @@ export default function HomePage() {
             <span className="span-4"> a Priority</span>
           </div>
           <button
-            className="get-started-btn"
+            className="home-get-started-btn"
             onClick={(e) => {
               navigate("/RegisterPage");
             }}
