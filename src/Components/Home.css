@@ -65,3 +65,39 @@
   transform: translateY(3px);
   color: rgb(255, 242, 226);
 }
+
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(204, 204, 204);
+  height: 40vh;
+  margin-left: 5%;
+  width: 40%;
+}
+#banner {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+}
+.banner-box img {
+  width: 50%;
+}
+.banner-1 {
+  display: flex;
+}
+.banner-1 p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(228, 94, 5);
+  text-align: center;
+  margin-top: 5vh;
+}
+.banner-1 span {
+  font-size: 18px;
+  color: rgb(28, 44, 69);
+}
+.banner-2 img {
+  width: 50%;
+}
