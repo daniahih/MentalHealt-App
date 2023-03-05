@@ -1,0 +1,18 @@
+.joke {
+  border: 1px solid black;
+  width: 50vw;
+  height: 10vh;
+  margin: auto;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.help {
+  border: 1px solid black;
+  width: 30vw;
+  height: 20vh;
+  margin: auto;
+  background-color: lightblue;
+  margin-top: 10vh;
+  text-align: center;
+}

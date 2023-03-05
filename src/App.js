@@ -10,6 +10,8 @@ import SadHelpPage from "./Components/SadHelpPage";
 import StressHelpPage from "./Components/StressHelpPage";
 import ShyHelpPage from "./Components/ShyHelpPage";
 import HappyHelpPage from "./Components/HappyHelpPage";
+import GetAjoke from "./Components/GetAjoke";
+import PracticeSelfCare from "./Components/PracticeSelfCare";
 
 const Router = createBrowserRouter([
   {
@@ -38,6 +40,8 @@ const Router = createBrowserRouter([
   { path: "/StressHelpPage", element: <StressHelpPage /> },
   { path: "/ShyHelpPage", element: <ShyHelpPage /> },
   { path: "/HappyHelpPage", element: <HappyHelpPage /> },
+  { path: "/GetAjoke", element: <GetAjoke /> },
+  { path: "/PracticeSelfCare", element: <PracticeSelfCare /> },
 ]);
 
 function App() {

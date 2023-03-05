@@ -28,7 +28,7 @@ function RegisterPage() {
   };
 
   if (isRegistered) {
-    navigate("/LoginPage");
+    navigate("/loginPage");
   } else {
     return (
       <div>
