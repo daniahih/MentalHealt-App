@@ -25,6 +25,7 @@ export default function HomePage() {
         </section>
       </div>
       <br></br>
+      <br></br>
       <section id="banner">
         <div className="banner-box">
           <div className="banner-1">
@@ -43,6 +44,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+
         <div className="banner-box">
           <div className="banner-1">
             <img

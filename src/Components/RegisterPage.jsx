@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./RegisterPage.css";
 
 function RegisterPage() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -28,47 +28,49 @@ function RegisterPage() {
     alert("Thank you for registering!");
   };
 
-  if (isRegistered) {
-    navigate("/loginPage");
-  } else {
-    return (
-      <div>
-        <h2>Register Page</h2>
-        <form>
-          <label>Name</label>
+  useEffect(() => {
+    if (isRegistered) {
+      navigate("/loginPage");
+    }
+  }, [isRegistered, navigate]);
+
+  return (
+    <div>
+      <h2>Register Page</h2>
+      <form>
+        <label>Name</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <label>
+          Email:
           <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          <label>
-            Email:
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <br />
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </label>
-          <br />
-          <button type="button" onClick={handleRegister}>
-            Register
-          </button>
-          <p>
-            Already have an account? <Link to="/loginPage">Log in here.</Link>
-          </p>
-        </form>
-      </div>
-    );
-  }
+        </label>
+        <br />
+        <label>
+          Password:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+        <br />
+        <button type="button" onClick={handleRegister}>
+          Register
+        </button>
+        <p>
+          Already have an account? <Link to="/loginPage">Log in here.</Link>
+        </p>
+      </form>
+    </div>
+  );
 }
 
 export default RegisterPage;

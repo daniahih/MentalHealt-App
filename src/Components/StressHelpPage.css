@@ -1,16 +1,70 @@
 .YogaSection {
   border: 1px solid black;
-  width: 30vw;
-  height: 60vh;
+  width: 60%;
 }
 .BookSection {
   border: 1px solid black;
-  width: 30vw;
-  height: 60vh;
+
+  width: 80%;
 }
 
 .Therapist-Section {
+  display: none;
   border: 1px solid black;
-  width: 30vw;
-  height: 60vh;
+  width: 60%;
+}
+.Therapist-Section.show {
+  display: block;
+}
+.calmMusic-section {
+  display: none;
+  border: 1px solid black;
+  width: 60%;
+}
+.calmMusic-section.show {
+  display: block;
+}
+.SelfCare-section {
+  display: none;
+  border: 1px solid black;
+  width: 60%;
+}
+.SelfCare-section.show {
+  display: block;
+}
+.cooking-Section {
+  display: none;
+  border: 1px solid black;
+  width: 60%;
+}
+.cooking-Section.show {
+  display: block;
+}
+.img-countainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.img-countainer div {
+  width: 85%;
+  margin-left: 8%;
+}
+
+.img-countainer img {
+  width: 100%;
+}
+.YogaSection h2 {
+  font-size: 18px;
+  margin-top: 1%;
+  text-transform: uppercase;
+  color: rgb(228, 94, 5);
+  text-align: center;
+}
+.YogaSection p {
+  text-align: center;
+}
+.click {
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
 }
