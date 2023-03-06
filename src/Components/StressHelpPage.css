@@ -1,17 +1,20 @@
 .YogaSection {
   border: 1px solid black;
-  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .BookSection {
+  display: block;
   border: 1px solid black;
-
-  width: 80%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .Therapist-Section {
   display: none;
   border: 1px solid black;
-  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .Therapist-Section.show {
   display: block;
@@ -19,7 +22,8 @@
 .calmMusic-section {
   display: none;
   border: 1px solid black;
-  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .calmMusic-section.show {
   display: block;
@@ -27,7 +31,8 @@
 .SelfCare-section {
   display: none;
   border: 1px solid black;
-  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .SelfCare-section.show {
   display: block;
@@ -35,23 +40,25 @@
 .cooking-Section {
   display: none;
   border: 1px solid black;
-  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .cooking-Section.show {
   display: block;
 }
 .img-countainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 33%);
   grid-gap: 20px;
 }
 .img-countainer div {
   width: 85%;
-  margin-left: 8%;
+  margin-left: 5%;
 }
 
 .img-countainer img {
-  width: 100%;
+  max-width: 99%;
+  height: fit-content;
 }
 .YogaSection h2 {
   font-size: 18px;
@@ -64,7 +71,24 @@
   text-align: center;
 }
 .click {
-  border: 1px solid black;
-  width: 50%;
+  font-size: 1.2em;
   text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(228, 94, 5);
+  color: #fff;
+  border-radius: 5px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

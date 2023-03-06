@@ -130,19 +130,12 @@ export default function StressHelpPage() {
       <div className="img-countainer">
         <div className="YogaSection">
           <h2> Yoga and Midition </h2>
-          <p>
-            It is a mind-body practice that involves physical postures,
-            breathing techniques, and meditation to improve overall health and
-            wellbeing. Yoga has gained popularity around the world due to its
-            numerous benefits, including reducing stress, improving flexibility,
-            strengthening muscles, and promoting mindfulness
-          </p>
+
           <p className="click"> click on the pic to start the Exersise </p>
           <a href={randomYogaVideo} target="_blank">
             <img
               src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=740&t=st=1677949131~exp=1677949731~hmac=59acbcb9fdf8a67af5ef65cc6cb8360ef91f3ed0f1bfe7a1750ea6004bfb788d"
               alt="yoga img"
-              width="300px"
             ></img>
           </a>
         </div>
@@ -154,7 +147,6 @@ export default function StressHelpPage() {
             onClick={selectRandomBooks}
             src="https://img.freepik.com/free-vector/book-lover-concept-illustration_114360-1067.jpg?w=740&t=st=1677949710~exp=1677950310~hmac=374d21c58889c7e01a271ba34638a8d42adb537a83968639d779a2f3b7eb1077"
             alt="bookimg"
-            width="300px"
           ></img>
           {isModalOpen && (
             <ModalBox
@@ -179,7 +171,6 @@ export default function StressHelpPage() {
             onClick={selectRandomTherapist}
             src="https://img.freepik.com/free-vector/woman-visiting-psychologist_74855-4824.jpg?w=1380&t=st=1678022542~exp=1678023142~hmac=daf4485e3c9a566d344acce1c11c9bd16c702d9fe6f2d21eb382dade7cd35448"
             alt="therapistimg"
-            width="300px"
           ></img>
           {isModalOpen && (
             <ModalBox
@@ -221,7 +212,6 @@ export default function StressHelpPage() {
             }}
             src="https://img.freepik.com/free-vector/hand-drawn-lagom-illustration_23-2149819877.jpg?w=900&t=st=1678023046~exp=1678023646~hmac=e7d22cb695f253b3510042973aa4f39aef9c311b68bc598d702bf27303eb03dc"
             alt="selfcareimg"
-            width="300px"
           ></img>
         </div>
         <div
@@ -239,7 +229,6 @@ export default function StressHelpPage() {
             onClick={selectRandomRecipes}
             src="https://img.freepik.com/free-vector/set-people-cooking-their-favourite-food_52683-38224.jpg?w=996&t=st=1678023850~exp=1678024450~hmac=138e35b0b427ed126aa961dd9e93ca2efcac9a126ac0729a8eb9d8878b9edc1d"
             alt="cookingimg"
-            width="300px"
           ></img>
         </div>
       </div>
