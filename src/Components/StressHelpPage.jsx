@@ -194,7 +194,7 @@ export default function StressHelpPage() {
           <h2> Calm Music</h2>
           <a href="https://www.youtube.com/watch?v=krcseLp4Az0" target="_blank">
             <img
-              src="https://www.shutterstock.com/image-vector/woman-doing-yoga-listening-music-260nw-1726817410.jpg"
+              src="https://img.freepik.com/free-vector/man-enjoying-beautiful-music-indoors_23-2148538051.jpg?w=740&t=st=1678135278~exp=1678135878~hmac=79c7c3f45f085a8528ae950a7dee2f4b82c25b83754c3bcbac0efbd39e7c067d"
               alt="calm music"
             />
           </a>
@@ -210,7 +210,7 @@ export default function StressHelpPage() {
             onClick={() => {
               navigate("/PracticeSelfCare");
             }}
-            src="https://img.freepik.com/free-vector/hand-drawn-lagom-illustration_23-2149819877.jpg?w=900&t=st=1678023046~exp=1678023646~hmac=e7d22cb695f253b3510042973aa4f39aef9c311b68bc598d702bf27303eb03dc"
+            src="https://img.freepik.com/free-vector/self-care-health-concept_23-2148517202.jpg?w=740&t=st=1678135195~exp=1678135795~hmac=dabc30d988644be4525a84e8f0183da80cb230a7852cda06f104b09a9890ddc2"
             alt="selfcareimg"
           ></img>
         </div>
@@ -219,17 +219,15 @@ export default function StressHelpPage() {
             showCookingSection ? " cooking-Section show " : "cooking-Section"
           }
         >
-          <p>lets do some cooking</p>
-          <p>Lets do some Cooking :{randomRecipes.name}</p>
+          <h2>lets do some cooking</h2>
+          <p>Suggested Resapies :{randomRecipes.name}</p>
           <a href={randomRecipes.href} target="_blank">
-            {" "}
-            link to the Recipes{" "}
+            <img
+              onClick={selectRandomRecipes}
+              src="https://img.freepik.com/free-vector/beautiful-housewife-is-cooking-kitchen-illustration-vector-cartoon-animation-design_40876-2541.jpg?w=740&t=st=1678134955~exp=1678135555~hmac=352b37bbae913c4de6ff8382f833decf80f49c01dbfa92eb58d345194afecc9b"
+              alt="cookingimg"
+            ></img>
           </a>
-          <img
-            onClick={selectRandomRecipes}
-            src="https://img.freepik.com/free-vector/set-people-cooking-their-favourite-food_52683-38224.jpg?w=996&t=st=1678023850~exp=1678024450~hmac=138e35b0b427ed126aa961dd9e93ca2efcac9a126ac0729a8eb9d8878b9edc1d"
-            alt="cookingimg"
-          ></img>
         </div>
       </div>
     </>

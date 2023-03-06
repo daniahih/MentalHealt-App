@@ -40,8 +40,6 @@
 .cooking-Section {
   display: none;
   border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .cooking-Section.show {
   display: block;
@@ -91,16 +89,4 @@
   100% {
     transform: scale(1);
   }
-}
-@media screen and (min-width: 600px) {
-  .img-countainer {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-gap: 20px;
-  }
-  .img-countainer div {
-    width: 85%;
-    margin-left: 5%;
-  }
-  /* ... */
 }

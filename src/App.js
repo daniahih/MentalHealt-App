@@ -33,15 +33,15 @@ const Router = createBrowserRouter([
       },
       { path: "/StressHelpPage", element: <StressHelpPage /> },
       { path: "LoginPage", element: <LoginPage /> },
+      { path: "/SadHelpPage", element: <SadHelpPage /> },
+      { path: "/PracticeSelfCare", element: <PracticeSelfCare /> },
     ],
   },
 
   { path: "/RegisterPage", element: <RegisterPage /> },
-  { path: "/SadHelpPage", element: <SadHelpPage /> },
   { path: "/ShyHelpPage", element: <ShyHelpPage /> },
   { path: "/HappyHelpPage", element: <HappyHelpPage /> },
   { path: "/GetAjoke", element: <GetAjoke /> },
-  { path: "/PracticeSelfCare", element: <PracticeSelfCare /> },
 ]);
 
 function App() {
