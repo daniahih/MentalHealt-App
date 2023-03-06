@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EmotionsPage from "./EmotionsPage";
 import { Link, useNavigate } from "react-router-dom";
+import "./LoginPage.css";
 export default function LoginPage() {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -35,7 +36,7 @@ export default function LoginPage() {
   return (
     <>
       <h1>hello from the login page</h1>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="Login-Form">
         <label>Name</label>
         <input
           type="text"
@@ -44,7 +45,7 @@ export default function LoginPage() {
         />
         <label>Email</label>
         <input
-          type="email "
+          type="email"
           onChange={(e) => {
             setEmail(e.target.value);
           }}

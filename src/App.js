@@ -32,11 +32,11 @@ const Router = createBrowserRouter([
         element: <EmotionsPage />,
       },
       { path: "/StressHelpPage", element: <StressHelpPage /> },
+      { path: "LoginPage", element: <LoginPage /> },
     ],
   },
 
   { path: "/RegisterPage", element: <RegisterPage /> },
-  { path: "LoginPage", element: <LoginPage /> },
   { path: "/SadHelpPage", element: <SadHelpPage /> },
   { path: "/ShyHelpPage", element: <ShyHelpPage /> },
   { path: "/HappyHelpPage", element: <HappyHelpPage /> },

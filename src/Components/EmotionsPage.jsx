@@ -78,21 +78,33 @@ function EmotionsPage() {
         </div>
         <div onClick={handelShyImage} className="card">
           <h1>shy</h1>
-          <img
-            src="https://img.freepik.com/free-vector/shy-concept-illustration_114360-3475.jpg?w=740&t=st=1677950459~exp=1677951059~hmac=5384251d2448bb4858d7df64695a1d7326ae0673964b98a0e2383f25be189d11"
-            alt="Shy"
-            width="200px"
-            height="200px"
-          />
+          <div className="card-countainer">
+            <p>
+              "Don't let shyness control your life. Take control of your
+              shyness, and don't let it define you or hold you back."
+            </p>
+            <img
+              src="https://img.freepik.com/free-vector/shy-concept-illustration_114360-3475.jpg?w=740&t=st=1677950459~exp=1677951059~hmac=5384251d2448bb4858d7df64695a1d7326ae0673964b98a0e2383f25be189d11"
+              alt="Shy"
+              width="200px"
+              height="200px"
+            />
+          </div>
         </div>
         <div onClick={handelHappyImage} className="card">
           <h1>happy</h1>
-          <img
-            src="https://img.freepik.com/free-vector/enthusiastic-concept-illustration_114360-3478.jpg?w=740&t=st=1677950815~exp=1677951415~hmac=be6efbc74495ac4ae8894f51fccfaa056abbfacc4d8caf939703ce526669519e"
-            alt="Surprised"
-            width="200px"
-            height="200px"
-          />
+          <div className="card-countainer">
+            <p>
+              "The happiness of your life depends upon the quality of your
+              thoughts."
+            </p>
+            <img
+              src="https://img.freepik.com/free-vector/enthusiastic-concept-illustration_114360-3478.jpg?w=740&t=st=1677950815~exp=1677951415~hmac=be6efbc74495ac4ae8894f51fccfaa056abbfacc4d8caf939703ce526669519e"
+              alt="Surprised"
+              width="200px"
+              height="200px"
+            />
+          </div>
         </div>
         <div onClick={handelHappyImage} className="card">
           <h1>scared</h1>
