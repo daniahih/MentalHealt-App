@@ -90,3 +90,15 @@
     transform: scale(1);
   }
 }
+@media (max-width: 600px) {
+  .img-countainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Adjust the width and margin of the image container */
+  .img-countainer div {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
