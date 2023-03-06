@@ -92,3 +92,15 @@
     transform: scale(1);
   }
 }
+@media screen and (min-width: 600px) {
+  .img-countainer {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 20px;
+  }
+  .img-countainer div {
+    width: 85%;
+    margin-left: 5%;
+  }
+  /* ... */
+}

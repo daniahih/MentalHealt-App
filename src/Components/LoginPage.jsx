@@ -57,7 +57,7 @@ export default function LoginPage() {
             setPassword(e.target.value);
           }}
         ></input>
-        <button>submit </button>
+        <button>Login </button>
       </form>
     </>
   );
