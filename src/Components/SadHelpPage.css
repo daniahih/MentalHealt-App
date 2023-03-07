@@ -1,2 +1,54 @@
-#FunnyVideo {
+.modal {
+  z-index: 1;
+  left: 30%;
+  top: 20%;
+  width: 10%;
+  height: 10%;
+}
+
+.modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-content button {
+  margin-top: 10px;
+}
+.imgSad-countiner {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 20px;
+}
+.Joke-section {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.imgSad-countiner div {
+  width: 85%;
+  margin-left: 5%;
+}
+
+.imgSad-countinerimg {
+  max-width: 99%;
+  height: fit-content;
+}
+.FunnyVideo {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.Memes-Section {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
