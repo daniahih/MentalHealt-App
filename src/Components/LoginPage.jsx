@@ -26,7 +26,7 @@ export default function LoginPage() {
       <Link to="/emotionpage"></Link>;
     } else {
       // If they don't match, show an error message
-      console.error("Invalid email or password");
+      alert("invaild email or password");
     }
   }
   if (isLoggedIn) {
