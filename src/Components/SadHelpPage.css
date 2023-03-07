@@ -27,7 +27,7 @@
 }
 .imgSad-countiner {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
+  grid-template-columns: repeat(3, 33%);
   grid-gap: 20px;
 }
 .Joke-section {
@@ -45,6 +45,11 @@
   height: fit-content;
 }
 .FunnyVideo {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.Memes-Section {
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
