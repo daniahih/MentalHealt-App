@@ -13,8 +13,12 @@ export default function ModalBox({ message, isOpen, closeModal, paragraph }) {
   };
 
   return (
-    <div className={isOpen ? "modal-container active" : "modal-container"}>
-      <div className="modal-content">
+    <div
+      className={
+        isOpen ? "modal-container-Stress active" : "modal-container-Stress"
+      }
+    >
+      <div className="modal-content-Stress">
         <p> {paragraph}</p>
         <h2>{message}</h2>
         <p>Was this helpful?</p>

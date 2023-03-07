@@ -1,4 +1,4 @@
-.modal-container {
+.modal-container-Stress {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,11 +9,11 @@
   align-items: center;
 }
 
-.modal-container.active {
+.modal-container-Stress.active {
   display: flex;
 }
 
-.modal-content {
+.modal-content-Stress {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
