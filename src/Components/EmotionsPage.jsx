@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./EmotionPage.css";
 import { useNavigate } from "react-router-dom";
 
 function EmotionsPage() {
   let navigate = useNavigate();
+  const [name, setName] = useState("");
   const [redirectTo, setRedirectTo] = useState(false);
   const [redirectToStress, setRedirectToStress] = useState(false);
   const [redirectToShy, setRedirectToShy] = useState(false);
   const [redirectToHappy, setredirectToHappy] = useState(false);
 
+  useEffect(() => {
+    const savedName = localStorage.getItem("userName");
+    if (savedName) {
+      setName(savedName);
+    }
+  }, []);
   const handleImageClick = () => {
     setRedirectTo(true);
   };
@@ -41,7 +48,7 @@ function EmotionsPage() {
 
   return (
     <>
-      <h1 className="title"> How do you feel today </h1>
+      <h1 className="title"> WELCOME {name} , How do you feel today </h1>
       <div className="emotion-Countainer">
         {/* sad div */}
         <div onClick={handleImageClick} className="card">

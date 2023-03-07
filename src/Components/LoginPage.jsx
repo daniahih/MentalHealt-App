@@ -8,7 +8,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [LoggedUser, setLoggedUser] = useState(null);
-  const [name, setName] = useState("");
+
   function submitHandler(e) {
     e.preventDefault();
 
@@ -37,12 +37,6 @@ export default function LoginPage() {
     <>
       <h1>hello from the login page</h1>
       <form onSubmit={submitHandler} className="Login-Form">
-        <label>Name</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
         <label>Email</label>
         <input
           type="email"
