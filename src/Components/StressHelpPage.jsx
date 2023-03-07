@@ -15,7 +15,6 @@ export default function StressHelpPage() {
     useState(false);
   const [showPracticeCare, setshowPracticeCare] = useState(false);
   const [showCookingSection, setshowCookingSection] = useState(false);
-  const [ShowVideo, setShowVideo] = useState(false);
 
   // array of yoga video links
   const yogaVideos = [
@@ -124,9 +123,6 @@ export default function StressHelpPage() {
   useEffect(() => {
     selectRandomRecipes();
   }, []);
-  const toggleVideo = () => {
-    setShowVideo(true);
-  };
 
   return (
     <>
@@ -189,33 +185,20 @@ export default function StressHelpPage() {
         {/* calm Music */}
 
         <div
-          class={
+          className={
             showCalmMusicSectionSection
               ? " calmMusic-section show"
               : "calmMusic-section"
           }
         >
           <h2> Calm Music</h2>
-          <img
-            onClick={toggleVideo}
-            src="https://img.freepik.com/free-vector/man-enjoying-beautiful-music-indoors_23-2148538051.jpg?w=740&t=st=1678135278~exp=1678135878~hmac=79c7c3f45f085a8528ae950a7dee2f4b82c25b83754c3bcbac0efbd39e7c067d"
-            alt="calm music"
-          />
-          <div
-            class="video-container"
-            className={ShowVideo ? "video show" : "video"}
-          >
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/krcseLp4Az0"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <a href="https://www.youtube.com/watch?v=krcseLp4Az0" target="_blank">
+            <img
+              src="https://img.freepik.com/free-vector/man-enjoying-beautiful-music-indoors_23-2148538051.jpg?w=740&t=st=1678135278~exp=1678135878~hmac=79c7c3f45f085a8528ae950a7dee2f4b82c25b83754c3bcbac0efbd39e7c067d"
+              alt="calm music"
+            />
+          </a>
         </div>
-
         {/* self Care section */}
         <div
           className={
