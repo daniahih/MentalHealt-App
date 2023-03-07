@@ -57,9 +57,8 @@ export default function SadHelpPage() {
           <h2> Tell Me A joke </h2>
           <img
             onClick={() => setClicked(true)}
-            src="https://img.freepik.com/premium-vector/illustration-man-giving-thumbs-up_167995-949.jpg?w=740"
+            src="https://img.freepik.com/premium-vector/kids-children-laughing-together_97632-565.jpg?w=740"
             alt="jokeimage"
-            width="300px"
           ></img>
 
           {clicked && navigate("/GetAjoke")}
@@ -68,9 +67,8 @@ export default function SadHelpPage() {
           <h2> Funny Video </h2>
           <a href={randomFunnyVideo} target="_blank">
             <img
-              src="https://img.freepik.com/free-vector/young-man-watching-concert-online-computer_74855-6442.jpg?w=900&t=st=1678174866~exp=1678175466~hmac=ad637833eafbb392f0903044b83db76e40e913f00586c19e56bc48fb4ff5a576"
+              src="https://img.freepik.com/premium-vector/happy-boy-man-jumping-with-joy-concept-illustration_270158-72.jpg?w=740"
               alt="funnyimg"
-              width="300px"
             ></img>
           </a>
         </div>
@@ -80,7 +78,6 @@ export default function SadHelpPage() {
             onClick={selectRandomMemes}
             src="https://img.freepik.com/free-vector/character-beautiful-woman-video-call-conference-with-lover_40876-2504.jpg?w=740&t=st=1678179171~exp=1678179771~hmac=f0a08cb467c904ec60841b692c26d4e54f529b305873620b51ace75285f2d24d"
             alt="memesimg"
-            width="300px"
           ></img>
           {showModal && (
             <div className="modal">
