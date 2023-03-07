@@ -110,7 +110,7 @@
   }
   #hero {
     background-color: #cccccc;
-    height: 89.8vh;
+    height: auto;
     width: 100%;
     margin-left: 0;
   }

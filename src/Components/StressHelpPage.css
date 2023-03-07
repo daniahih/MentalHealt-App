@@ -102,3 +102,9 @@
     margin-left: 5%;
   }
 }
+.video {
+  display: none;
+}
+.video .show {
+  display: block;
+}
