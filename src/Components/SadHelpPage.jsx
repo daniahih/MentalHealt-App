@@ -17,7 +17,7 @@ export default function SadHelpPage() {
     "https://www.youtube.com/watch?v=ZeD4TPGpw6o",
     "https://www.youtube.com/watch?v=nS2gpCffS1U",
     "https://www.youtube.com/watch?v=XjfZFH_dhgM",
-    "https://www.youtube.com/watch?v=KyYdKIuM2sQ",
+    "https://www.youtube.com/watch?v=XtECVJrLW1g",
   ];
   const Memes = [
     "https://static.demilked.com/wp-content/uploads/2022/09/it-humor-memes-5.jpeg",
@@ -30,7 +30,11 @@ export default function SadHelpPage() {
     "https://www.ourmindfullife.com/wp-content/uploads/2021/04/funny-best-friends-memes-and-friendship-memes-3.jpg",
     "https://cdn.memes.com/up/81964641604589304/i/1650640428490.png",
     "https://i0.wp.com/winkgo.com/wp-content/uploads/2022/04/stress-memes-01.jpg?resize=720%2C829&ssl=1",
-    " https://remote-tools-images.s3.amazonaws.com/work-from-home-memes/33.jpg",
+    "https://remote-tools-images.s3.amazonaws.com/work-from-home-memes/33.jpg",
+    "https://www.boredpanda.com/blog/wp-content/uploads/2022/09/relatable-funny-memes-22-63284d45ebe28__700.jpg",
+    "https://images.indianexpress.com/2017/04/work-meme2.jpg?w=350",
+    " https://www.rd.com/wp-content/uploads/2020/04/GettyImages-687802868_meme-WFH.jpg?fit=640,427",
+    "https://www.rd.com/wp-content/uploads/2020/04/14_WFH3-scaled.jpg?fit=640,427",
   ];
   const selectRandomFunnyVideo = () => {
     const randomIndex = Math.floor(Math.random() * FunnyVideos.length);

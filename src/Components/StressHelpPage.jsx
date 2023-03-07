@@ -100,11 +100,21 @@ export default function StressHelpPage() {
 
     console.log(showTherapistSection);
   };
+
   const closeModelTH = () => {
     setIsModalOpen(false);
     setshowCalmMusicSectionSection(true);
     setshowPracticeCare(true);
     setshowCookingSection(true);
+  };
+  const YesModelBook = () => {
+    setShowTherapistSection(false);
+  };
+
+  const YesModelTHeraapist = () => {
+    setshowCalmMusicSectionSection(false);
+    setshowPracticeCare(false);
+    setshowCookingSection(false);
   };
 
   const selectRandomTherapist = () => {
@@ -153,6 +163,7 @@ export default function StressHelpPage() {
               message={modalMessage}
               isOpen={isModalOpen}
               closeModal={closeModal}
+              yesModel={YesModelBook}
               paragraph={modalParaghrph}
             />
           )}
@@ -177,6 +188,7 @@ export default function StressHelpPage() {
               message={modalMessage}
               isOpen={isModalOpen}
               closeModal={closeModelTH}
+              yesModel={YesModelTHeraapist}
               paragraph={modalParaghrph}
             />
           )}

@@ -1,13 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import "./ModalBox.css";
 
-export default function ModalBox({ message, isOpen, closeModal, paragraph }) {
+export default function ModalBox({
+  message,
+  isOpen,
+  closeModal,
+  yesModel,
+  paragraph,
+}) {
   let navigate = useNavigate();
   const handleClose = () => {
     closeModal(false);
     navigate("/StressHelpPage");
   };
   const HandelYes = () => {
+    closeModal(false);
+    yesModel();
     alert("we are always here to help you");
     navigate("/StressHelpPage");
   };

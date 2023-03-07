@@ -1,18 +1,25 @@
 .joke {
-  border: 1px solid black;
-  width: 50vw;
-  height: 10vh;
+  width: 50%;
+  height: 30%;
   margin: auto;
   margin-top: 20vh;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .help {
-  border: 1px solid black;
   width: 30vw;
   height: 20vh;
   margin: auto;
-  background-color: lightblue;
+  background-color: rgb(28, 44, 69);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   margin-top: 10vh;
   text-align: center;
+}
+.help p {
+  color: white;
 }
