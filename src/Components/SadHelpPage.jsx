@@ -29,6 +29,8 @@ export default function SadHelpPage() {
     "http://static.demilked.com/wp-content/uploads/2019/10/5da8209e8ce78-funny-boss-memes-coverimage2.jpg",
     "https://www.ourmindfullife.com/wp-content/uploads/2021/04/funny-best-friends-memes-and-friendship-memes-3.jpg",
     "https://cdn.memes.com/up/81964641604589304/i/1650640428490.png",
+    "https://i0.wp.com/winkgo.com/wp-content/uploads/2022/04/stress-memes-01.jpg?resize=720%2C829&ssl=1",
+    " https://remote-tools-images.s3.amazonaws.com/work-from-home-memes/33.jpg",
   ];
   const selectRandomFunnyVideo = () => {
     const randomIndex = Math.floor(Math.random() * FunnyVideos.length);
@@ -47,8 +49,9 @@ export default function SadHelpPage() {
 
   return (
     <>
-      <h1>hello from sad help page</h1>
-      <p>"I'm here for you and I want to support you in any way I can."</p>
+      <p className="title-sad">
+        "I'm here for you and I want to support you in any way I can."
+      </p>
       <div className="imgSad-countiner">
         <div className="Joke-section">
           <h2> Tell Me A joke </h2>
@@ -72,6 +75,7 @@ export default function SadHelpPage() {
           </a>
         </div>
         <div className="Memes-Section">
+          <h2> Memes</h2>
           <img
             onClick={selectRandomMemes}
             src="https://img.freepik.com/free-vector/character-beautiful-woman-video-call-conference-with-lover_40876-2504.jpg?w=740&t=st=1678179171~exp=1678179771~hmac=f0a08cb467c904ec60841b692c26d4e54f529b305873620b51ace75285f2d24d"
