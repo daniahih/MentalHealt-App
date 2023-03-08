@@ -52,7 +52,10 @@ button {
 
 @media screen and (max-width: 600px) {
   form {
-    width: 100%;
+    width: 50%;
+  }
+  .Register-Pic img {
+    width: 50%;
   }
   button {
     float: none;
