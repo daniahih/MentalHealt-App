@@ -27,7 +27,7 @@
 .imgSad-countiner {
   display: grid;
   grid-template-columns: repeat(2, 40%);
-  grid-template-rows: repeat(1, 50%);
+
   grid-gap: 5%;
   margin-left: 13%;
 }

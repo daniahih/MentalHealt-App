@@ -35,12 +35,12 @@ const Router = createBrowserRouter([
       { path: "LoginPage", element: <LoginPage /> },
       { path: "/SadHelpPage", element: <SadHelpPage /> },
       { path: "/PracticeSelfCare", element: <PracticeSelfCare /> },
+      { path: "/HappyHelpPage", element: <HappyHelpPage /> },
     ],
   },
 
   { path: "/RegisterPage", element: <RegisterPage /> },
   { path: "/ShyHelpPage", element: <ShyHelpPage /> },
-  { path: "/HappyHelpPage", element: <HappyHelpPage /> },
   { path: "/GetAjoke", element: <GetAjoke /> },
 ]);
 

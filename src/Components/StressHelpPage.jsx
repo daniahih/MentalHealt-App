@@ -232,7 +232,9 @@ export default function StressHelpPage() {
           }
         >
           <h2>lets do some cooking</h2>
-          <p>Suggested Resapies :{randomRecipes.name}</p>
+          <p style={{ textAlign: "center" }}>
+            Suggested Recipes :{randomRecipes.name}
+          </p>
           <a href={randomRecipes.href} target="_blank">
             <img
               onClick={selectRandomRecipes}

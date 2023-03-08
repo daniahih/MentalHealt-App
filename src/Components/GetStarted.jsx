@@ -1,11 +1,8 @@
-import { Link } from "react-router-dom";
-export default function GetStarted() {
-  return (
-    <>
-      <h1>hello from GetStarted page</h1>
-      <p>lets register your name to see how we can help you</p>
+import { useNavigate } from "react-router-dom";
 
-      <Link to="/RegisterPage"> register page </Link>
-    </>
-  );
+export default function GetStarted() {
+  let navigate = useNavigate();
+  navigate("/RegisterPage");
+
+  // since this component is not rendering any elements, you can return null here.
 }

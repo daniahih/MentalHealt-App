@@ -31,8 +31,12 @@ export default function ModalBox({
         <h2>{message}</h2>
         <p>Was this helpful?</p>
 
-        <button onClick={HandelYes}>Yes</button>
-        <button onClick={handleClose}> No</button>
+        <button className="joke-btn" onClick={HandelYes}>
+          Yes
+        </button>
+        <button className="joke-btn" onClick={handleClose}>
+          No
+        </button>
       </div>
     </div>
   );
