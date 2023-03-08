@@ -52,22 +52,6 @@ button {
 
 @media screen and (max-width: 600px) {
   .Register-Countiner {
-    display: flex;
-    border: 1px solid black;
-    width: 100%;
-    margin: auto;
-    height: 90%;
-    margin-top: 4%;
-    border-radius: 10px;
-  }
-  form {
-    width: 50%;
-  }
-  .Register-Pic img {
-    width: 50%;
-  }
-  button {
-    float: none;
-    width: 100%;
+    width: 90%;
   }
 }
