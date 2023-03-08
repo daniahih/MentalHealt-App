@@ -54,4 +54,12 @@ button {
   .Register-Countiner {
     width: 90%;
   }
+  .Register-Pic img {
+    display: none;
+  }
+  .Register-Form {
+    width: 90%;
+
+    height: 100%;
+  }
 }
