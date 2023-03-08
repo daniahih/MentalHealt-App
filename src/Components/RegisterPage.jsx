@@ -35,18 +35,27 @@ function RegisterPage() {
   }, [isRegistered, navigate]);
 
   return (
-    <div>
-      <h2>Register Page</h2>
+    <div className="Register-Countiner ">
+      <div className="Register-Pic">
+        <img
+          src="https://img.freepik.com/premium-vector/mental-health-awarness-flat-design_556043-15.jpg?w=740"
+          alt="regester-img"
+        ></img>
+      </div>
       <form className="Register-Form">
+        <h2>Register Page</h2>
+        <p> Register And enjoy the service</p>
         <label>Name</label>
         <input
           type="text"
           value={name}
+          placeholder="UserName"
           onChange={(e) => setName(e.target.value)}
         />
         <label>
           Email:
           <input
+            placeholder="Email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -56,6 +65,7 @@ function RegisterPage() {
         <label>
           Password:
           <input
+            placeholder="Password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
