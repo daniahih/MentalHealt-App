@@ -68,3 +68,29 @@
 button {
   margin-top: 10px;
 }
+@media screen and (max-width: 600px) {
+  .modal-container-SpreadLov {
+    position: relative;
+    z-index: 1;
+    left: 0%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-content-SpreadLove {
+    padding: 10px;
+  }
+
+  .happy-img-countainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .happy-title {
+    font-size: 1em;
+    width: 80%;
+    margin-top: 5%;
+  }
+}
