@@ -104,8 +104,8 @@ footer {
   background-color: #cccccc;
   height: 15%;
   display: flex;
-  gap: 30;
   margin-top: 2%;
+  justify-content: center;
 }
 footer .col {
   display: flex;
