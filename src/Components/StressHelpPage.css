@@ -8,20 +8,8 @@
   margin: auto;
   padding: 10px;
   margin-top: 1%;
+}
 
-  animation: animate3 1s infinite;
-}
-@keyframes animate3 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .YogaSection {
   border: 1px solid black;
   border-radius: 10px;

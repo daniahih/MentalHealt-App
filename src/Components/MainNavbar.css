@@ -36,3 +36,16 @@ header {
 .navbar a:hover {
   color: #660922;
 }
+/* For screens with a width of 600px or less */
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+  }
+  .navbar li {
+    list-style: none;
+    padding: 0 9px;
+  }
+}

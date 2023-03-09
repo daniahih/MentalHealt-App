@@ -240,7 +240,7 @@ export default function StressHelpPage() {
           <a href={randomRecipes.href} target="_blank">
             <img
               onClick={selectRandomRecipes}
-              src="https://img.freepik.com/free-vector/beautiful-housewife-is-cooking-kitchen-illustration-vector-cartoon-animation-design_40876-2541.jpg?w=740&t=st=1678134955~exp=1678135555~hmac=352b37bbae913c4de6ff8382f833decf80f49c01dbfa92eb58d345194afecc9b"
+              src="https://img.freepik.com/premium-vector/happy-cute-little-kid-girl-wear-chef-uniform-cooking-birthday-cake_97632-3343.jpg?w=826"
               alt="cookingimg"
             ></img>
           </a>
