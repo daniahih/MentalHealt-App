@@ -239,8 +239,9 @@ export default function StressHelpPage() {
           </p>
           <a href={randomRecipes.href} target="_blank">
             <img
+              style={{ marginTop: "20%" }}
               onClick={selectRandomRecipes}
-              src="https://img.freepik.com/premium-vector/happy-cute-little-kid-girl-wear-chef-uniform-cooking-birthday-cake_97632-3343.jpg?w=826"
+              src="https://img.freepik.com/premium-vector/vector-illustration-women-cooking-minimalist-style-woman-cooking_469123-533.jpg?w=1380"
               alt="cookingimg"
             ></img>
           </a>

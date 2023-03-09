@@ -120,7 +120,7 @@ function EmotionsPage() {
             />
           </div>
         </div>
-        <div onClick={handelHappyImage} className="card">
+        <div className="card">
           <h1>Scared</h1>
           <img
             src="https://img.freepik.com/free-vector/anxiety-concept-illustration_114360-8054.jpg?w=740&t=st=1678009537~exp=1678010137~hmac=06d98017af972aa019bcc43793d42df1c879051f71f15139eafe7cc96fa938c2"
