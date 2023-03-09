@@ -65,6 +65,37 @@ export default function HomePage() {
         </div>
       </section>
       <br></br>
+      <footer>
+        <div className="col">
+          <h4> Contact Information</h4>
+          <p>
+            <b>Address:</b> Jerusalem
+          </p>
+          <p>
+            <b>Phone:</b> 052365214
+          </p>
+          <p>
+            <b>Email</b> MentalHealth@gmail.com
+          </p>
+        </div>
+        <div class="col">
+          <h4> Account</h4>
+          <p>Login Page</p>
+          <p> Create an Acount </p>
+          <p>our Services </p>
+        </div>
+        <div className="col install">
+          <h4> Install App</h4>
+          <p> From App store or Google play </p>
+          <div class="row">
+            <img
+              src="https://img.freepik.com/premium-vector/download-app-store-get-it-google-play-button-icons-with-neumorphism-design_659151-351.jpg?w=1380"
+              alt=""
+              width="200px"
+            />
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

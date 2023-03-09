@@ -100,6 +100,31 @@
 .banner-2 img {
   width: 50%;
 }
+footer {
+  background-color: #cccccc;
+  height: 15%;
+  display: flex;
+  gap: 30;
+  margin-top: 2%;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3vw;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
 @media screen and (max-width: 600px) {
   #main {
     width: 50%;
