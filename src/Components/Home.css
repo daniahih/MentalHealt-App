@@ -54,7 +54,7 @@
   border-radius: 5px;
   box-shadow: 0 5px 0 rgb(255, 242, 226);
   transition: all 0.2s ease-in-out;
-  margin-top: 60vh;
+  margin-top: 50vh;
   margin-left: 25vw;
 }
 
@@ -101,18 +101,10 @@
   width: 50%;
 }
 @media screen and (max-width: 600px) {
-  #main {
-    background-image: url("https://img.freepik.com/premium-vector/concept-step-into-unknown-future-head-man-clouds_10083-1099.jpg?w=740");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 40px 20px;
-  }
   #hero {
     background-color: #cccccc;
     height: auto;
     width: 100%;
-    margin-left: 0;
   }
   .span-1 {
     font-size: 25px;
@@ -147,7 +139,7 @@
 
   .home-get-started-btn {
     display: block;
-    margin: 10vh auto 0;
+    margin-top: -20px;
   }
 
   .banner-box {
