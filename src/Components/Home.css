@@ -101,6 +101,9 @@
   width: 50%;
 }
 @media screen and (max-width: 600px) {
+  #main {
+    width: 50%;
+  }
   #hero {
     background-color: #cccccc;
     height: auto;
@@ -108,7 +111,7 @@
   }
   .span-1 {
     font-size: 25px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 20vh;
     position: relative;
     color: rgb(255, 242, 226);
@@ -116,30 +119,31 @@
   }
   .span-2 {
     font-size: 35px;
-    margin-left: 10%;
+    margin-left: 5%;
     position: relative;
     margin-top: 10vh;
     color: rgb(228, 94, 5);
   }
   .span-3 {
     font-size: 35px;
-    margin-left: 10%;
+    margin-left: 5%;
     position: relative;
     margin-top: 5vh;
     color: rgb(28, 44, 69);
   }
   .span-4 {
     font-size: 25px;
-    margin-left: 10%;
-    margin-top: 5vh;
+    margin-left: 5%;
+    margin-top: 7vh;
     position: relative;
     color: rgb(255, 242, 226);
-    text-align: center;
   }
 
   .home-get-started-btn {
     display: block;
-    margin-top: -20px;
+    margin-top: 20px;
+    float: right;
+    text-align: center;
   }
 
   .banner-box {

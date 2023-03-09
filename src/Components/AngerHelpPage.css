@@ -34,3 +34,9 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 600px) {
+  .AngerImg-Countainer {
+    grid-template-columns: repeat(1, 90%);
+    margin-left: 5%;
+  }
+}
