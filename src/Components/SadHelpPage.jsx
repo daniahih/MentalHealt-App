@@ -80,7 +80,7 @@ export default function SadHelpPage() {
           <h2> Memes</h2>
           <img
             onClick={selectRandomMemes}
-            src="https://img.freepik.com/free-vector/character-beautiful-woman-video-call-conference-with-lover_40876-2504.jpg?w=740&t=st=1678179171~exp=1678179771~hmac=f0a08cb467c904ec60841b692c26d4e54f529b305873620b51ace75285f2d24d"
+            src="https://img.freepik.com/premium-vector/young-good-looking-woman-walking-using-phone_97632-5986.jpg?w=360"
             alt="memesimg"
           ></img>
           {showModal && (

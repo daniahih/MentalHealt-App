@@ -8,9 +8,8 @@ export default function HappyHelpPage() {
     "https://www.youtube.com/watch?v=MsXdUtlDVhk",
     "https://www.youtube.com/watch?v=ES4I2aiNUK0",
     "https://www.youtube.com/watch?v=RFfbZV3bwys",
-    "https://www.youtube.com/watch?v=pRbxlpvXw2s",
     "https://www.youtube.com/watch?v=wvnh_50Rf4M",
-    "https://www.youtube.com/watch?v=FVwtDBcSdpw",
+    "https://www.youtube.com/watch?v=YZsy-ULEcwI",
   ];
   const selectRandomDanceVideo = () => {
     const randomIndex = Math.floor(Math.random() * DanceVideo.length);

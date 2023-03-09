@@ -34,6 +34,9 @@ h1 {
 .card-countainer {
   display: flex;
 }
+.card h1 {
+  color: rgb(28, 44, 69);
+}
 @media screen and (min-width: 601px) {
   .card {
     width: 33.33%;

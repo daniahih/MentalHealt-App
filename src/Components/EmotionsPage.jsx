@@ -9,6 +9,7 @@ function EmotionsPage() {
   const [redirectToStress, setRedirectToStress] = useState(false);
   const [redirectToShy, setRedirectToShy] = useState(false);
   const [redirectToHappy, setredirectToHappy] = useState(false);
+  const [redirectToAnger, setRedirectToAnger] = useState(false);
 
   useEffect(() => {
     const savedName = localStorage.getItem("userName");
@@ -45,6 +46,12 @@ function EmotionsPage() {
   if (redirectToHappy) {
     navigate("/HappyHelpPage");
   }
+  const handelAngerPage = () => {
+    setRedirectToAnger(true);
+    if (redirectToAnger) {
+      navigate("/AngerHelpPage");
+    }
+  };
 
   return (
     <>
@@ -69,7 +76,7 @@ function EmotionsPage() {
         </div>
 
         <div onClick={handelStressImage} className="card">
-          <h1>stress</h1>
+          <h1>Stress</h1>
           <div className="card-countainer">
             <p>
               "Adopting the right attitude can convert a negative stress into a
@@ -84,7 +91,7 @@ function EmotionsPage() {
           </div>
         </div>
         <div onClick={handelShyImage} className="card">
-          <h1>shy</h1>
+          <h1>Shy</h1>
           <div className="card-countainer">
             <p>
               "Don't let shyness control your life. Take control of your
@@ -99,7 +106,7 @@ function EmotionsPage() {
           </div>
         </div>
         <div onClick={handelHappyImage} className="card">
-          <h1>happy</h1>
+          <h1>Happy</h1>
           <div className="card-countainer">
             <p>
               "The happiness of your life depends upon the quality of your
@@ -114,10 +121,19 @@ function EmotionsPage() {
           </div>
         </div>
         <div onClick={handelHappyImage} className="card">
-          <h1>scared</h1>
+          <h1>Scared</h1>
           <img
             src="https://img.freepik.com/free-vector/anxiety-concept-illustration_114360-8054.jpg?w=740&t=st=1678009537~exp=1678010137~hmac=06d98017af972aa019bcc43793d42df1c879051f71f15139eafe7cc96fa938c2"
             alt="scared"
+            width="200px"
+            height="200px"
+          />
+        </div>
+        <div onClick={handelAngerPage} className="card">
+          <h1>Anger</h1>
+          <img
+            src="https://img.freepik.com/free-vector/angry-woman-concept-illustration_114360-13100.jpg?w=740&t=st=1678346930~exp=1678347530~hmac=f9f00e6055a058e8e3e9bdc4167d0bed1df6721c15d949a32327e5331938f8b2"
+            alt="Anger"
             width="200px"
             height="200px"
           />
