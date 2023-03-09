@@ -107,19 +107,19 @@ footer {
   margin-top: 2%;
   justify-content: center;
 }
+
 footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 3vw;
 }
-footer .logo {
-  margin-bottom: 30px;
-}
+
 footer h4 {
   font-size: 16px;
   padding-bottom: 20px;
 }
+
 footer p {
   font-size: 13px;
   margin: 0 0 8px 0;
@@ -207,5 +207,27 @@ footer p {
   }
   .banner-2 img {
     width: 100%;
+  }
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+  }
+
+  footer .col {
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  footer p {
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 }
