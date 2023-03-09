@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function AngerHelpPage() {
   const [randomGYMs, setRandomGYMs] = useState("");
   const [modelAnger, setModelAnger] = useState(false);
+  const [modelTakeTimeOUT, setmodelTakeTimeOUT] = useState(false);
 
   const Gyms = [
     {
@@ -53,9 +54,25 @@ export default function AngerHelpPage() {
           <h2>Take a timeout</h2>
 
           <img
+            onClick={(e) => setmodelTakeTimeOUT(true)}
             src="https://img.freepik.com/free-vector/coffee-break-concept-illustration_114360-3707.jpg?w=740&t=st=1678350163~exp=1678350763~hmac=e82d086ae26ae42b5e839a2bab94df18bf4795e183947522a18c3e0f54939f3a"
             alt="TimeOut-img"
           ></img>
+          {modelTakeTimeOUT && (
+            <div className="modal-anger">
+              <div className="modal-anger-content">
+                <p>
+                  Give yourself a break. Sit away from others. In this quiet
+                  time, you can process events and return your emotions to
+                  neutral. You may even find this time away from others is so
+                  helpful you want to schedule it into your daily routine.
+                </p>
+                <p> Was This HelpFull</p>
+                <button onClick={() => setmodelTakeTimeOUT(false)}> Yes</button>
+                <button onClick={() => setmodelTakeTimeOUT(false)}> No</button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       {modelAnger && (

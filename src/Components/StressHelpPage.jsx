@@ -136,12 +136,14 @@ export default function StressHelpPage() {
 
   return (
     <>
-      <h1>Here we have several steps that may help you reduce stress</h1>
+      <h1 className="stress-tittle">
+        Here we have several steps that may help you reduce stress
+      </h1>
       <div className="img-countainer">
         <div className="YogaSection">
-          <h2> Yoga and Midition </h2>
+          <h2> Yoga and Meditation </h2>
 
-          <p className="click"> click on the pic to start the Exersise </p>
+          <p className="click"> click on the pic to start the exercise </p>
           <a href={randomYogaVideo} target="_blank">
             <img
               src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=740&t=st=1677949131~exp=1677949731~hmac=59acbcb9fdf8a67af5ef65cc6cb8360ef91f3ed0f1bfe7a1750ea6004bfb788d"
@@ -180,7 +182,7 @@ export default function StressHelpPage() {
           <h2> Suggestions for therapist in the area</h2>
           <img
             onClick={selectRandomTherapist}
-            src="https://img.freepik.com/free-vector/woman-visiting-psychologist_74855-4824.jpg?w=1380&t=st=1678022542~exp=1678023142~hmac=daf4485e3c9a566d344acce1c11c9bd16c702d9fe6f2d21eb382dade7cd35448"
+            src="https://img.freepik.com/free-vector/psychologist-concept-illustration_114360-2040.jpg?w=996&t=st=1678355293~exp=1678355893~hmac=0ac0bda81259648d78f95fa6a91a402b939c98b95d8bd526a2af3b6f8611aa19"
             alt="therapistimg"
           ></img>
           {isModalOpen && (

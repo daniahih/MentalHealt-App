@@ -1,3 +1,27 @@
+.stress-tittle {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: rgb(28, 44, 69);
+  color: #fff;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  margin-top: 1%;
+
+  animation: animate3 1s infinite;
+}
+@keyframes animate3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .YogaSection {
   border: 1px solid black;
   border-radius: 10px;
@@ -9,6 +33,16 @@
   border-radius: 10px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+.BookSection h2 {
+  font-size: 20px;
+  margin-top: 5%;
+  text-transform: uppercase;
+  color: rgb(228, 94, 5);
+  text-align: center;
+}
+.BookSection img {
+  margin-top: 6%;
+}
 
 .Therapist-Section {
   display: none;
@@ -18,6 +52,18 @@
 }
 .Therapist-Section.show {
   display: block;
+}
+.Therapist-Section h2,
+.calmMusic-section h2,
+.cooking-Section h2 {
+  font-size: 20px;
+  margin-top: 10%;
+  text-transform: uppercase;
+  color: rgb(228, 94, 5);
+  text-align: center;
+}
+.Therapist-Section img {
+  margin-top: 5%;
 }
 .calmMusic-section {
   display: none;
@@ -50,6 +96,7 @@
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-gap: 20px;
+  margin-top: 3%;
 }
 .img-countainer div {
   width: 85%;
