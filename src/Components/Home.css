@@ -131,9 +131,8 @@ footer p {
   }
   #hero {
     background-color: #cccccc;
-    height: 40vh;
-    width: 140vw;
-    margin-right: 8%;
+    height: 30vh;
+    width: 100%;
   }
   .span-1 {
     font-size: 25px;
