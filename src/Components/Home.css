@@ -128,6 +128,7 @@ footer p {
 @media screen and (max-width: 600px) {
   #main {
     width: 50%;
+    height: 20vh;
   }
   #hero {
     background-color: #cccccc;
