@@ -10,11 +10,13 @@ export default function StressHelpPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [modalParaghrph, setmodalParaghrph] = useState("");
+
   const [showTherapistSection, setShowTherapistSection] = useState(false);
   const [showCalmMusicSectionSection, setshowCalmMusicSectionSection] =
     useState(false);
   const [showPracticeCare, setshowPracticeCare] = useState(false);
   const [showCookingSection, setshowCookingSection] = useState(false);
+  const [SowhVideo, setShowVideo] = useState(false);
 
   // array of yoga video links
   const yogaVideos = [
@@ -134,6 +136,10 @@ export default function StressHelpPage() {
     selectRandomRecipes();
   }, []);
 
+  const CalmMusic = () => {
+    setShowVideo(true);
+  };
+
   return (
     <>
       <h1 className="stress-tittle">
@@ -201,18 +207,27 @@ export default function StressHelpPage() {
         <div
           className={
             showCalmMusicSectionSection
-              ? " calmMusic-section show"
+              ? "calmMusic-section show"
               : "calmMusic-section"
           }
         >
           <h2> Calm Music</h2>
-          <a href="https://www.youtube.com/watch?v=krcseLp4Az0" target="_blank">
-            <img
-              src="https://img.freepik.com/free-vector/man-enjoying-beautiful-music-indoors_23-2148538051.jpg?w=740&t=st=1678135278~exp=1678135878~hmac=79c7c3f45f085a8528ae950a7dee2f4b82c25b83754c3bcbac0efbd39e7c067d"
-              alt="calm music"
-            />
-          </a>
+          <img
+            onClick={CalmMusic}
+            src="https://img.freepik.com/free-vector/man-enjoying-beautiful-music-indoors_23-2148538051.jpg?w=740&t=st=1678135278~exp=1678135878~hmac=79c7c3f45f085a8528ae950a7dee2f4b82c25b83754c3bcbac0efbd39e7c067d"
+          ></img>
+          {SowhVideo && (
+            <iframe
+              width="350"
+              height="315"
+              src="https://www.youtube.com/embed/krcseLp4Az0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          )}
         </div>
+
         {/* self Care section */}
         <div
           className={
