@@ -229,20 +229,7 @@ export default function StressHelpPage() {
         </div>
 
         {/* self Care section */}
-        <div
-          className={
-            showPracticeCare ? " calmMusic-section show" : "SelfCare-section"
-          }
-        >
-          <h2> Practice Self Care</h2>
-          <img
-            onClick={() => {
-              navigate("/PracticeSelfCare");
-            }}
-            src="https://img.freepik.com/free-vector/self-care-health-concept_23-2148517202.jpg?w=740&t=st=1678135195~exp=1678135795~hmac=dabc30d988644be4525a84e8f0183da80cb230a7852cda06f104b09a9890ddc2"
-            alt="selfcareimg"
-          ></img>
-        </div>
+
         <div
           className={
             showCookingSection ? " cooking-Section show " : "cooking-Section"
@@ -260,6 +247,20 @@ export default function StressHelpPage() {
               alt="cookingimg"
             ></img>
           </a>
+        </div>
+        <div
+          className={
+            showPracticeCare ? " calmMusic-section show" : "SelfCare-section"
+          }
+        >
+          <h2> Practice Self Care</h2>
+          <img
+            onClick={() => {
+              navigate("/PracticeSelfCare");
+            }}
+            src="https://img.freepik.com/free-vector/self-care-health-concept_23-2148517202.jpg?w=740&t=st=1678135195~exp=1678135795~hmac=dabc30d988644be4525a84e8f0183da80cb230a7852cda06f104b09a9890ddc2"
+            alt="selfcareimg"
+          ></img>
         </div>
       </div>
     </>
