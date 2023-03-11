@@ -13,6 +13,7 @@ import HappyHelpPage from "./Components/HappyHelpPage";
 import GetAjoke from "./Components/GetAjoke";
 import PracticeSelfCare from "./Components/PracticeSelfCare";
 import AngerHelpPage from "./Components/AngerHelpPage";
+import ScaredHelpPage from "./Components/ScaredHelpPage";
 
 const Router = createBrowserRouter([
   {
@@ -43,6 +44,7 @@ const Router = createBrowserRouter([
 
   { path: "/RegisterPage", element: <RegisterPage /> },
   { path: "/ShyHelpPage", element: <ShyHelpPage /> },
+  { path: "/ScaredHelpPage", element: <ScaredHelpPage /> },
   { path: "/GetAjoke", element: <GetAjoke /> },
 ]);
 

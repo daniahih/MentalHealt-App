@@ -10,6 +10,7 @@ function EmotionsPage() {
   const [redirectToShy, setRedirectToShy] = useState(false);
   const [redirectToHappy, setredirectToHappy] = useState(false);
   const [redirectToAnger, setRedirectToAnger] = useState(false);
+  const [redirectToScared, setRedirectToScared] = useState(false);
 
   useEffect(() => {
     const savedName = localStorage.getItem("userName");
@@ -50,6 +51,12 @@ function EmotionsPage() {
     setRedirectToAnger(true);
     if (redirectToAnger) {
       navigate("/AngerHelpPage");
+    }
+  };
+  const handelScaredPage = () => {
+    setRedirectToScared(true);
+    if (redirectToScared) {
+      navigate("/ScaredHelpPage");
     }
   };
 
@@ -120,7 +127,7 @@ function EmotionsPage() {
             />
           </div>
         </div>
-        <div className="card">
+        <div className="card" onClick={handelScaredPage}>
           <h1>Scared</h1>
           <img
             src="https://img.freepik.com/free-vector/anxiety-concept-illustration_114360-8054.jpg?w=740&t=st=1678009537~exp=1678010137~hmac=06d98017af972aa019bcc43793d42df1c879051f71f15139eafe7cc96fa938c2"
