@@ -1,6 +1,6 @@
 #main {
   background-image: url("https://img.freepik.com/premium-vector/concept-step-into-unknown-future-head-man-clouds_10083-1099.jpg?w=740");
-  width: 40%;
+  width: 50%;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 80px 80px;
@@ -9,7 +9,7 @@
   background-color: #cccccc;
   height: 89.8vh;
   width: 60%;
-  margin-left: -10vw;
+  margin-left: -20%;
   position: relative;
 }
 .span-1 {
@@ -131,7 +131,7 @@ footer p {
   }
   #hero {
     background-color: #cccccc;
-    height: 30vh;
+    height: 27vh;
     width: 100%;
   }
   .span-1 {
